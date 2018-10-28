@@ -1,0 +1,15 @@
+disini saya akan memberikan script cara menampilkan kata pada layar pada bahasa c/c++
+langsung aja
+pertama kita tentukan header file 
+saya menggunakan library iostream
+berikut script cara menampilkan kata pada bahasa C++
+saya akan menampilkan kata "hello world"
+#include<iostream>
+
+int main () {
+cout<<"Hello World" ;
+}
+jadi statement "cout" adalah perintah Output untuk library iostrem
+sedangkan input statementnya "cin".
+trimakasih sudah membaca 
+sekian.
