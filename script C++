@@ -1,0 +1,271 @@
+berikut ini contoh script C++ 
+script ini berisi contoh cek promo sim card operator secara umum
+
+
+
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+using namespace std;
+
+int main () {
+		int b,a,c;
+		string code;
+		int pulsa = 25;
+		int minta;
+		int ulang;
+	
+		cout<<"Masukan Code  =  ";
+		cin>>code;
+			system ("cls");
+	
+if (code == "*123#")
+{ 
+	do{
+		
+
+cout<<nama<<endl;
+cout<<nim<<endl;
+	
+	cout<<endl;
+	cout<<" ======================="<<endl;
+	cout<<"    XL bagi-bagi Promo"<<endl;
+	cout<<" =======================\n"<<endl;
+	cout<< " Saldo pulsa anda $"<<pulsa<<endl<<endl;
+	cout<< " 1. Paket Internet"<<endl;
+	cout<< " 2. Paket SMS"<<endl;
+	cout<< " 3. Paket Nelpon"<<endl;
+	cout<< " 4. Minta Pulsa\n"<<endl;
+	cout<< " Masukkan Pilihan = ";
+	cin>>b;
+	system ("cls");
+	
+	if (b==1)
+	{	cout<<endl;
+		cout<< " Paket Internet 4G LTE"<<endl<<endl;
+		cout<< " 1. Internet super asik 5GB $25"<<endl;
+        cout<< " 2. Internet murah 7GB      $30"<<endl;
+		cout<< " 3. Internet Lama lama 50GB $70"<<endl;
+        cout<< " 0. kembali "<<endl<<endl;
+	    cout<< " Pilih =   ";
+	    cin>>ulang;
+
+		system ("cls");
+		if(ulang==1){
+			
+			cout<<"\n Anda akan membeli paket 5Gb seharga $25\n\n";
+			cout<<"1. YA\n";
+			cout<<"0. Kembali\n\n";
+			cout<<"pilih = ";cin>>ulang;
+			system ("cls");
+			if(ulang==1){
+			if(pulsa>=25){
+				cout<<"Terima Kasih\n\n";
+				cout<<"Pilih 0 untuk kembali ";cin>>ulang;
+			pulsa=pulsa-25;
+			system ("cls");}
+		else {
+		cout<<"Maaf Pulsa anda tidak cukup\n\n";
+		cout<<"Pilih 0 untuk kembali : ";cin>>ulang;
+		system ("cls");}	
+	        }
+	}
+		   if(ulang==2){
+			
+			cout<<"\n Anda akan membeli paket 7Gb seharga $30\n\n";
+			cout<<"1. YA\n";
+			cout<<"0. Kembali\n\n";
+			cout<<"pilih = ";cin>>ulang;
+			system ("cls");
+			if(ulang==1){
+			if(pulsa>=30){
+				cout<<"Terima Kasih\n\n";
+				cout<<"Pilih 0 untuk kembali ";cin>>ulang;
+			pulsa=pulsa-30;
+			system ("cls");}
+		else {
+		cout<<"Maaf Pulsa anda tidak cukup\n\n";
+		cout<<"Pilih 0 untuk kembali : ";cin>>ulang;
+		system ("cls");}
+	        }}
+		
+		if(ulang==3){
+			
+			cout<<"\n Anda akan membeli paket 50Gb seharga $70\n\n";
+			cout<<"1. YA\n";
+			cout<<"0. Kembali\n\n";
+			cout<<"pilih = ";cin>>ulang;
+			system ("cls");
+			if(ulang==1){
+			if(pulsa>=70){
+				cout<<"Terima Kasih\n\n";
+				cout<<"Pilih 0 untuk kembali ";cin>>ulang;
+			pulsa=pulsa-70;
+			system ("cls");}
+		else {
+		cout<<"Maaf Pulsa anda tidak cukup\n\n";
+		cout<<"Pilih 0 untuk kembali : ";cin>>ulang;
+		system ("cls");}
+        	}
+		 }
+	}
+
+ 		   if (b==2)	{
+		cout<<endl;
+		cout<< " Paket SMS"<<endl<<endl;
+		cout<< " 1. SMS murah 1000 sms        $1  1 hari"<<endl;
+		cout<< " 2. Paket Galau SMS sepuasnya $5  2 hari"<<endl;
+		cout<< " 3. SMS No Limit              $10 7 hari"<<endl;
+		cout<< " 0. kembali"<<endl<<endl;
+		cout<< " Pilih =   ";
+		cin>>ulang;
+		system ("cls");
+				if(ulang==1){
+			
+			cout<<"\n Anda akan membeli paket 1000 SMS 1 hari seharga $1\n\n";
+			cout<<"1. YA\n";
+			cout<<"0. Kembali\n\n";
+			cout<<"pilih = ";cin>>ulang;
+			system ("cls");
+			if(ulang==1){
+			if(pulsa>=1){
+				cout<<"Terima Kasih\n\n";
+				cout<<"Pilih 0 untuk kembali ";cin>>ulang;
+			pulsa=pulsa-1;
+			system ("cls");}
+		else {
+		cout<<"Maaf Pulsa anda tidak cukup\n\n";
+		cout<<"Pilih 0 untuk kembali";cin>>ulang;
+		system ("cls");}	
+        }
+            	}
+			if(ulang==2){
+			
+			cout<<"\n Anda akan membeli paket SMS Sepuasnya 2 hari seharga $5\n\n";
+			cout<<"1. YA\n";
+			cout<<"0. Kembali\n\n";
+			cout<<"pilih = ";cin>>ulang;
+			system ("cls");
+			if(ulang==1){
+			if(pulsa>=5){
+				cout<<"Terima Kasih\n\n";
+				cout<<"Pilih 0 untuk kembali ";cin>>ulang;
+			pulsa=pulsa-5;
+			system ("cls");}
+		else {
+		cout<<"Maaf Pulsa anda tidak cukup\n\n";
+		cout<<"Pilih 0 untuk kembali : ";cin>>ulang;
+		system ("cls");}
+	}
+		}
+		if(ulang==3){
+			
+			cout<<"\n Anda akan membeli paket SMS No limit 7 hari seharga $10\n\n";
+			cout<<"1. YA\n";
+			cout<<"0. Kembali\n\n";
+			cout<<"pilih = ";cin>>ulang;
+			system ("cls");
+			if(ulang==1){
+			if(pulsa>=10){
+				cout<<"Terima Kasih\n\n";
+				cout<<"Pilih 0 untuk kembali ";cin>>ulang;
+			pulsa=pulsa-10;
+			system ("cls");}
+		else {
+		cout<<"Maaf Pulsa anda tidak cukup\n\n";
+		cout<<"Pilih 0 untuk kembali : ";cin>>ulang;
+		system ("cls");}
+	}
+		}
+	}
+
+    if (b==3)
+	{	cout<<endl;
+		cout<< " Paket Nelpon"<<endl<<endl;
+		cout<< " 1. Nelpon murah 250 menit     $5"<<endl;
+		cout<< " 2. Nelpon LDR 500 menit       $7"<<endl;
+		cout<< " 3. Nelpon Lama lama 700 menit $10"<<endl;
+		cout<< " 0. kembali"<<endl<<endl;
+		cout<< " Pilih =   ";
+		cin>>ulang;
+		system ("cls");
+		if(ulang==1){
+			
+			cout<<"\n Anda akan membeli paket Nelpon 250 menit seharga $5\n\n";
+			cout<<"1. YA\n";
+			cout<<"0. Kembali\n\n";
+			cout<<"pilih = ";cin>>ulang;
+			system ("cls");
+			if(ulang==1){
+			if(pulsa>=5){
+				cout<<"Terima Kasih\n\n";
+				cout<<"Pilih 0 untuk kembali ";cin>>ulang;
+			pulsa=pulsa-5;
+			system ("cls");}
+		cout<<"Maaf Pulsa anda tidak cukup\n\n";
+		cout<<"Pilih 0 untuk kembali";cin>>ulang;
+		system ("cls");	
+	}
+		}
+			if(ulang==2){
+			
+			cout<<"\n Anda akan membeli paket Nelpon 500 menit seharga $7\n\n";
+			cout<<"1. YA\n";
+			cout<<"0. Kembali\n\n";
+			cout<<"pilih = ";cin>>ulang;
+			system ("cls");
+			if(ulang==1){
+			if(pulsa>=7){
+				cout<<"Terima Kasih\n\n";
+				cout<<"Pilih 0 untuk kembali ";cin>>ulang;
+			pulsa=pulsa-7;
+			system ("cls");}
+		else {
+		cout<<"Maaf Pulsa anda tidak cukup\n\n";
+		cout<<"Pilih 0 untuk kembali";cin>>ulang;
+		system ("cls");}	
+	}
+		}
+			if(ulang==3){
+			
+			cout<<"\n Anda akan membeli paket Nelpon 700 menit seharga $10\n\n";
+			cout<<"1. YA\n";
+			cout<<"0. Kembali\n\n";
+			cout<<"pilih = ";cin>>ulang;
+			system ("cls");
+			if(ulang==1){
+			if(pulsa>=10){
+				cout<<"Terima Kasih\n\n";
+				cout<<"Pilih 0 untuk kembali ";cin>>ulang;
+			pulsa=pulsa-10;
+			system ("cls");}
+		else {
+		cout<<"Maaf Pulsa anda tidak cukup\n\n";
+		cout<<"Pilih 0 untuk kembali";cin>>ulang;
+		system ("cls");}	
+	}
+		}
+	}
+	
+    if (b==4){
+	cout<<"\n Maksimal Nominal Pulsa Yang bisa Diminta = $10\n\n";
+	cout<<" Masukkan nominal Pulsa yang diminta ";
+	cin>>minta;
+	system ("cls");
+	if(minta<=10){
+		pulsa=pulsa+minta;
+		ulang=0;
+
+	}
+	else{cout<<"maaf nominal yang anda minta melebihi batas\n\n";
+	cout<<"Pilih 0 untuk kembali : ";cin>>ulang;
+	system ("cls");
+	}
+}
+
+}while(ulang == 0 );
+}
+else 
+cout<<"\n Maaf code tidak ditemukan"<<endl;
+}
+
