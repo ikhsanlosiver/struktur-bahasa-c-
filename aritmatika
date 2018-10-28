@@ -1,0 +1,20 @@
+lambang oprasi aritmatika pada c++
+-penjumlahan
+sama seprti simbol pada biasanya yaitu plus (+) contoh script
+A=b+c;
+-pengurangan
+sama seperti penjumlahan lambangnya sama seperti biasa minus (-)
+A=b-c;
+-perkalian 
+untuk perkalian simbol yang digunakan adalah bintang (*)
+A=b*c;
+pembagian 
+yang terakhir pembagian yaitu garing(/)
+A=b/c;
+beberapa simbul lain seperti
+lebih dari = (>)
+kurang dari = (<)
+lbih dari samadengan = (=>)
+kurang dari smadengan = (=<)
+sisa pembagian = (%)
+mungkin itu saja untuk kali ini.
