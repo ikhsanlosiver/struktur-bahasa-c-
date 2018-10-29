@@ -1,0 +1,170 @@
+#include <conio.h>
+#include <iostream>
+#include <string>
+
+int main()
+{
+ int x,y,z;
+ int gerbang;
+ int and,or,not,nand,nor,xor,xnor;
+ string pswd;
+ char salah_pin;
+ do
+ {
+
+ char ulang='Y';
+ char keluar='T';
+ int pilihan=0;
+ do
+ {
+ salah_pin='0';
+cout<<"=============================\n";
+cout<<"      GERBANG LOGIKA\n";
+cout<<"=============================\n\n";
+cout<<"======================\n";
+cout<<"  1. Gerbang AND\n";
+cout<<"  2. Gerbang OR\n";
+cout<<"  3. Gerbang NOT\n";
+cout<<"  4. Gerbang NAND\n";
+cout<<"  5. Gerbang NOR\n";
+cout<<"  6. Semua Gerbang\n";
+cout<<"======================\n";
+cout<<" Masukan Pilihan : ";
+cin>>gerbang;
+ clrscr();
+ switch (gerbang)
+ {
+ case 1:
+ {
+cout<<endl;
+cout<<"  Gerbang AND\n\n";
+cout<<"Masukan input x : ";
+cin>>x;
+cout<<"Masukan input y : ";
+cin>>y;
+cout<<endl;
+
+and = x*y;
+cout<<" Output gerbang AND : "<<and<<endl<<endl;
+cout<<" 1. Untuk Kembali Ke Home  : ";
+cin>>ulang;
+
+ clrscr();
+break;
+ }
+
+ case 2:
+ {
+ cout<<endl;
+cout<<" Gerbang OR\n"; endl;
+cout<<endl;
+cout<<"Masukan input x : ";
+cin>>x;
+cout<<"Masukan input y : ";
+cin>>y;
+cout<<endl;
+or = x+y;
+cout<<" Output gerbang OR : "<<or<<endl<<endl;
+ cout<<" 1. Untuk Kembali Ke Home  : ";
+ cin>>ulang;
+ clrscr();
+ break;
+ }
+ case 3:
+ {
+ cout<<endl;
+cout<<" Gerbang NOT\n"; endl;
+cout<<endl;
+cout<<"Masukan input x : ";
+cin>>x;
+//cout<<"Masukan input y : ";
+//cin>>y;
+cout<<endl;
+not = x^1;
+cout<<" Output gerbang NOT : "<<not<<endl<<endl;
+ cout<<"  1. Untuk Kembali Ke Home  : ";
+ cin>>ulang;
+ clrscr() ;
+ break;
+ }
+ case 4:
+ {
+ cout<<endl;
+cout<<" Gerbang NAND\n"; endl;
+cout<<endl;
+cout<<"Masukan input x : ";
+cin>>x;
+cout<<"Masukan input y : ";
+cin>>y;
+cout<<endl;
+nand = (x*y)^1;
+cout<<" Output gerbang NAND : "<<nand<<endl<<endl;
+ cout<<" 1. Untuk Kembali Ke Home  : ";
+ cin>>ulang;
+ clrscr();
+ break;
+ }
+ case 5:
+ {
+ cout<<endl;
+cout<<" Gerbang NOR\n"; endl;
+cout<<endl;
+cout<<"Masukan input x : ";
+cin>>x;
+cout<<"Masukan input y : ";
+cin>>y;
+cout<<endl;
+nor = (x)^1;
+cout<<" Output gerbang NOR : "<<nor<<endl<<endl;
+cout<<" 1. Untuk Kembali Ke Home  : ";
+cin>>ulang;
+
+ clrscr();
+ break;
+ }
+ case 6 :
+ {
+cout<<endl;
+cout<<"  SEMUA GERBANG LOGIKA\n\n";
+cout<<"Masukan input x : ";
+cin>>x;
+cout<<"Masukan input y : ";
+cin>>y;
+cout<<endl;
+and = x*y;
+cout<<" 1.Output gerbang AND  : "<<and<<endl<<endl;
+or = x+y;
+cout<<" 2.Output gerbang OR   : "<<or<<endl<<endl;
+not = x^1;
+cout<<" 3.Output gerbang NOT  : "<<not<<endl<<endl;
+nand = (x*y)^1;
+cout<<" 4.Output gerbang NAND : "<<nand<<endl<<endl;
+nor = (x)^1;
+cout<<" 5.Output gerbang NOR  : "<<nor<<endl<<endl;
+cout<<" 1. Untuk Kembali Ke Home  : ";
+cin>>ulang;
+
+ clrscr();
+ break;
+ }
+ default :
+ {
+ clrscr();
+ cout<<endl;
+ cout<<"          Pelanggan Yang Terhotmat"<<endl;
+ cout<<"                   Maaf"<<endl;;
+ cout<<"Nomor Yang Anda Tuju Tidak Dapat di Hubungi\n\n";
+ cout<<" Tekan 1, Untuk Kembali Ke Home  : ";
+ cin>>ulang;
+ clrscr();
+ break;
+ }
+ }
+ if(ulang == '5')
+ ulang= '5';
+ }
+ while ((ulang!='5')) ;
+ }
+ while(salah_pin!='0');
+
+}
